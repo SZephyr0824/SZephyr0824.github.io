@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 上面这个定义的东西应该去搞清楚 */
+
+h1 {
+    color: white;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.slider {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:200vh;
+    background: linear-gradient(to left,#c5ed90,#3fd9e4);
+    z-index: -1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 5% 1fr 50% 1fr 1fr 1fr 1fr 5%;
+    min-height: 8vh;
+    color:white;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.aboutpart {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap:1rem;
+    grid-auto-rows: minmax(100px,auto);
+    color:white;
+    /* justify-items: flex-start;
+    align-items: center; */
+}
+
+#selfp {
+    width:100%;
+}
+
+.aboutintro p {
+  text-indent:20px;
+}
+
+.aboutintro h2 {
+    top:20%;
+}
+
+nav >p {
+    font-size: 14px;
+}
+
+#logon {
+    grid-column: 2/3;
+    font-size:24px;
+}
+
+#guide1 {
+    grid-column: 4/5;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slimit {
+    display: flex;
+    justify-content: center;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.hero {
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+.hero img {
+    width:100%;
+    height:80%;
+    object-fit: cover;
+}
+
+.headline {
+    position: absolute;
+    top:75%;
+    left:15%;
+    font-size:60px;
+    transform: translate(-20%,-70%);
+    z-index:3;
+}
+
+/* .hero::after {
+    content:"";
+    background: black;
+    width: 100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    opacity:0.1;
+    top:0;
+ }   */
+/* 这是添加一个黑色透明度的东西 但我的图片并不太需要 */
